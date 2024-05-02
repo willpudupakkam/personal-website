@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b294e;
+    color: white;
+    font-family: "Comfortaa";
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* TITLE PAGE: */
+
+.header {
+    background-color: #1b294e;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    /* border-bottom: solid 2px #ff8383; */
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.right {
+    display: flex;
+    gap: 40px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 0 10px 0;
+    font-family: 'Comfortaa';
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #1b294e;
+    /* border-radius: 12px; */
+    font-size: 18px;
+}
+
+#title-page {
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: solid 2px #ff8383; */
+}
+
+#welcome {
+    border: solid 3px #ff8383;
+    border-radius: 40px;
+    padding: 20px 40px 20px 40px;
+    /* max-width: 700px; */
+    font-size: 70px;
+    font-weight: 300;
+}
+
+#middle {
+    /* margin-top: -200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+#colors {
+    display: flex;
+    /* max-height: 15px; */
+    align-self: center;
+    gap: 10px;
+}
+
+.color-btn {
+    padding: 10px;
+    background: none;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+#reef {
+    background-color: #1b294e; /* dark blue */
+    border-color: #ff8383; /* salmon/coral */  
+}
+
+#banana {
+    background-color: #2A133F; /* dark purple */
+    border-color: #FFFF6B; /* light yellow */
+}
+
+#jungle {
+    background-color: #012B07;
+    border-color: #FA9D00;
+}
+
+#chocolate {
+    background-color: #2a1b00;
+    border-color: #63ceff; 
+}
+
+#hacker {
+    background-color: #181818;
+    border-color: #2FDA77;
+}
+
+#oreo {
+    background-color: #000000;
+    border-color: #FFFFFF;
+}
+
+/* ABOUT PAGE */
+
+#about-page {
+    padding: 75px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.paragraph {
+    padding: 0 20px 0 20px;
+    border-left: solid 2px #ff8383;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+/* PROJECT PAGE */
+
+#projects-page {
+    padding: 75px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project-box {
+    border: solid 2px #ff8383;
+    border-radius: 10px;
+    padding: 10px;
+}
