@@ -138,8 +138,26 @@ body {
     padding: 0 20px 0 20px;
     border-left: solid 2px #ff8383;
     font-size: 20px;
-    letter-spacing: 2px;
     line-height: 25px;
+}
+
+#about-buttons {
+    /* margin-top: 40px; */
+    /* padding: 0 20px 0 20px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 25px;
+}
+
+.link {
+    border: solid 2px #ff8383;
+    border-radius: 25px;
+    background: none;
+    color: white;
+    font-family: "Comfortaa";
+    font-size: large;
+    padding: 15px;
 }
 
 /* PROJECT PAGE */
@@ -164,4 +182,8 @@ body {
     border: solid 2px #ff8383;
     border-radius: 10px;
     padding: 10px;
+}
+
+p {
+    font-family: "Ubuntu Sans Mono";
 }

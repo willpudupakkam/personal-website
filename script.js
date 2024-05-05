@@ -10,7 +10,7 @@ const btn = document.querySelectorAll(".btn");
 btn.forEach(button => {
     button.addEventListener("mouseover", () => {
         button.style.color = olColor;
-    })
+    });
     button.addEventListener("mouseout", () => {
         button.style.color = "white";
     });
@@ -21,7 +21,7 @@ const aboutBtn = document.querySelector("#about");
 const projectsBtn = document.querySelector("#projects");
 const notesBtn = document.querySelector("#notes");
 
-const titlePage = document.querySelector("#title-page")
+const titlePage = document.querySelector("#title-page");
 const aboutPage = document.querySelector("#about-page");
 const projectsPage = document.querySelector("#projects-page");
 
@@ -34,7 +34,7 @@ homeBtn.addEventListener("click", () => {
     // aboutBtn.style.borderColor = bgColor;
 
     titlePage.scrollIntoView();
-})
+});
 
 aboutBtn.addEventListener("click", () => {
     // aboutBtn.style.color = "white";
@@ -48,7 +48,7 @@ aboutBtn.addEventListener("click", () => {
     notesSelected = false;
 
     aboutPage.scrollIntoView();
-})
+});
 
 projectsBtn.addEventListener("click", () => {
     // projectsBtn.style.color = "white";
@@ -63,7 +63,7 @@ projectsBtn.addEventListener("click", () => {
     notesSelected = false;
 
     projectsPage.scrollIntoView();
-})
+});
 
 notesBtn.addEventListener("click", () => {
     // notesBtn.style.color = "white";
@@ -77,7 +77,7 @@ notesBtn.addEventListener("click", () => {
     projectsSelected = false;
     notesSelected = true;
 
-})
+});
 
 const bg = document.querySelectorAll(".background");
 const outline = document.querySelectorAll(".outline");
@@ -119,7 +119,7 @@ colorBtn.forEach(color => {
             default:
                 olColor = "#FFFFFF";
                 bgColor = "#000000";
-        }
+        };
 
         btn.forEach(button => {
             button.style.borderColor = bgColor;
@@ -130,18 +130,18 @@ colorBtn.forEach(color => {
                 projectsBtn.style.borderColor = olColor;
             } else if(notesSelected) {
                 notesBtn.style.borderColor = olColor;
-            }
-        })
+            };
+        });
     
         bg.forEach(backg => {
             backg.style.backgroundColor = bgColor;
-        })
+        });
     
         outline.forEach(ol => {
             ol.style.borderColor = olColor;
-        })
-    })
-})
+        });
+    });
+});
 
 // Button Select After Scrolling:
 
@@ -188,7 +188,6 @@ function handleIntersection(entries, observer) {
     });
 };
   
-
 const observerOptions = {
     root: null,
     threshold: 0.5,
@@ -199,11 +198,3 @@ const observer = new IntersectionObserver(handleIntersection, observerOptions);
 observer.observe(titlePage);
 observer.observe(aboutPage);
 observer.observe(projectsPage);
-
-// document.addEventListener('keydown', function(event) {
-//     if (event.key === 'b') { // Replace 'a' with whatever key you want to trigger the sound
-//       var audio = document.getElementById('myAudio');
-//       audio.currentTime = 0;
-//       audio.play();
-//     }
-//   });
