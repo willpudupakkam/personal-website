@@ -43,59 +43,75 @@
             <!-- <div style="padding: 30px 0 10px 0;">scroll for more</div> -->
         </div>
     </div>
-    <p style="display: flex; justify-content: center;">note: this website is still being developed</p>
-
     <div id="about-page">
         <div class="title">a b o u t . . .</div>
+        <!-- <div id="about-buttons">
+            <button class="outline link">Résumé</button>
+            <button class="outline link">GitHub</button>
+            <button class="outline link">LinkedIn</button>
+            <button class="outline link">Email</button>       
+        </div> -->
         <div style="display: flex">
             <div class="outline paragraph">
-                <p style="margin: 0px">Welcome to my personal portfolio website! My name is William Pudupakkam, and I'm a second-year Mathematical Physics major at the University of Waterloo.</p>
+                <p style="margin: 0px">Welcome to my personal portfolio website - still under development! My name is William Pudupakkam, and I'm a second-year Mathematical Physics major at the University of Waterloo.</p>
                 <p>Back when I was a little kid, I remember telling my parents, “when I grow up, I want to be a race car”. To my past-self's disappointment, this ambitious dream did not pan out. However, I went with the next best thing: pursuing my newfound passion for mathematics, physics, and computer science! I started becoming deeply interested in mathematics around high school, and taking physics in grades 11 & 12 instantly hooked me. This ultimately led me to major in Mathematical Physics as well as minor in Computing for my undergrad, a choice which I have not regretted since.</p>
                 <p>So far, I've solidified my foundational knowledge in physics with courses such as Mechanics, Waves/Electricity/Magnetism (along with their respective labs), as well as Modern Physics, Quantum Physics, and Computational Physics. I have an extensive mathematical background, with Calculus 1-4, Linear Algebra 1-2, Differential Equations, and Probability. A few of these courses carried usage of Python as well, giving me a familiarity with modules such as Numpy, Matplotlib, Scipy, Sympy, and more.</p>
                 <p>My general interest in computer science has also led me to pick up a multitude of new skills. For example, the development of this website is a product of my HTML, CSS and Javascript knowledge (side note: this website was made entirely from scratch; no templates). I’ve also had my eye on iOS development, leading me to pick up Apple’s Swift language. Other languages I know include Python, R, and MATLAB, which have had their uses both among my academic course load and for personal projects.</p>
                 <p style="margin: 0px">Outside my studies I enjoy playing piano to relax. I have a deep interest in music theory, and in fact am working on a project using Python that generates unique musical melodies that sound “nice” (see the projects section below for more info).</p>
-            </div>
-            <div id="about-buttons">
-                <button class="outline link">Résumé</button>
-                <button class="outline link">GitHub</button>
-                <button class="outline link">LinkedIn</button>
-                <button class="outline link">Email</button>
             </div>
         </div>
     </div>
 
     <div id="projects-page">
         <div class="title">p r o j e c t s . . .</div>
+        <p>note: click on any box to view the GitHub for that project</p>
         <div id="projects">
             <div class="row">
-                <div class="outline project-box">
-                    <strong>Project 1</strong>
-                    <p>Created a simulation of a Galton board in python.</p>
-                </div>
-                <!-- <div class="outline project-box">
-                    <strong>Project 1</strong>
-                    <p>Created a simulation of a Galton board in python.</p>
-                </div>
-                <div class="outline project-box">
-                    <strong>Project 1</strong>
-                    <p>Created a simulation of a Galton board in python.</p>
-                </div>            -->
+                <a class="outline project-box" href="https://github.com/willpudupakkam/python-playground/blob/main/sudoku-solver.ipynb" target="_blank">
+                    <div class="outline">
+                        <strong style="font-size: 22px;">Sudoku Solver</strong>
+                        <p style="font-size: 18px;">Created a function in Python that solves Sudoku puzzles. The algorithm currently is a brute-force approach that checks every single box to see if there are any numbers that can be placed, and it repeats this process from the start every time until every box has a number. This was my first attempt at it, and I am planning on working out a much more optimized approach.</p>
+                    </div>
+                </a>
+                <a class="outline project-box" href="https://github.com/willpudupakkam/python-playground/blob/main/pi-collisions.ipynb" target="_blank">
+                    <div class="outline">
+                        <strong style="font-size: 22px;">Block Collision Simulation</strong>
+                        <p style="font-size: 18px;">An interesting result in mathematics is the number of collisions two blocks make when the mass of one block is 100^n times the mass of the other. I created a simulation in Python to demonstrate that as you increase n, the number of collisions approaches the digits of Pi (i.e. there will be 3, then 31, then 314, etc. collisions as n increases).</p>
+                    </div>
+                </a>
+                <a class="outline project-box" href="https://github.com/willpudupakkam/python-playground/blob/main/galton-board.ipynb" target="_blank">
+                    <div class="outline">
+                        <strong style="font-size: 22px;">Galton Board Simulation</strong>
+                        <p style="font-size: 18px;">One thing that really interested me in my probability course was the result that certain probability distributions can be approximated by the normal distribution for a high value of <em>n</em>. To prove this, I created a simulation of a Galton Board in Python that allows you to vary <em>n</em> (the number of balls being dropped), and in turn should produce a histogram in the shape of a normal distribution.</p>
+                    </div>                    
+                </a>    
             </div>
-            <!-- <div class="row">
-                <div class="outline project-box">
-                    <strong>Project 1</strong>
-                    <p>Created a simulation of a Galton board in python.</p>
-                </div>
-                <div class="outline project-box">
-                    <strong>Project 1</strong>
-                    <p>Created a simulation of a Galton board in python.</p>
-                </div>
-                <div class="outline project-box">
-                    <strong>Project 1</strong>
-                    <p>Created a simulation of a Galton board in python.</p>
-                </div>  
-            </div> -->
+            <div class="row">
+                <a class="outline project-box" onclick="alert('This project has not been posted on my GitHub yet, and will be added soon.')" target="_blank">
+                    <div class="outline">
+                        <strong style="font-size: 22px;">Linear Algebra Tools</strong>
+                        <p style="font-size: 18px;">Sometimes linear algebra calculations can get pretty tedius (i.e. finding an orthonormal basis), so I created various Python functions that carry out these processes for me.</p>
+                    </div>      
+                </a>
+                <a class="outline project-box" onclick="alert('This project has not been posted on my GitHub yet, and will be added soon.')" target="_blank">
+                    <div class="outline">
+                        <strong style="font-size: 22px;">Musical Composer</strong>
+                        <p style="font-size: 18px;">My passions for computer science and music theory collide - developing a function that takes in a root note (A, B, C, etc.) and outputs a unique musical melody using knowledge of music theory. This function will not simply generate random notes, but take into account basic concepts of music theory such as intervals, harmony, chord progressions, and more.</p>
+                    </div>
+                </a>
+                <a class="outline project-box" target="_blank">
+                    <div class="outline">
+                        <strong style="font-size: 22px;">...and more to come!</strong>
+                        <p style="font-size: 18px;"></p>
+                    </div>
+                </a> 
+            </div>
         </div>
+    </div>
+    <div id="notes-page">
+        <div class="title">n o t e s . . .</div>
+        <p>Coming soon! Here I will post my personal notes from courses I take during my undergrad along with other resources.</p>
+        <p style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan est mi, sit amet rutrum leo pharetra venenatis. Proin nec arcu vitae sapien mollis ornare. Morbi rhoncus risus sed convallis molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc in odio mattis, congue ligula non, porttitor dolor. Cras cursus varius lacus eget faucibus. Vivamus posuere elit a lacus vulputate fringilla. Quisque facilisis nunc augue, et pharetra lacus tempus eu. Duis eget eros nulla. Nunc nec scelerisque mauris. Mauris pharetra viverra urna, id placerat dui feugiat vitae. Fusce gravida dictum luctus. Suspendisse luctus luctus finibus. In ut finibus nunc, a gravida est.Vivamus dolor turpis, ultrices mattis ex eget, dictum mollis urna. Aliquam volutpat enim et eleifend vestibulum. Proin ornare felis vitae mauris sodales rutrum. In convallis porttitor scelerisque. Vestibulum auctor lacus mi, et pellentesque tortor volutpat vitae. Mauris neque ante, feugiat a risus vitae, vulputate dignissim velit. Pellentesque elementum scelerisque fermentum. Etiam condimentum nisl id sapien commodo, vitae ullamcorper mauris elementum. Duis at ultrices tortor, nec porttitor diam. Praesent ornare posuere lacus, sed venenatis quam aliquam eu. Quisque pellentesque urna non diam tincidunt sollicitudin. Vestibulum ut massa non ante sollicitudin cursus ac non risus. Praesent fermentum nibh ac orci finibus suscipit. Ut fringilla condimentum odio, ut tristique arcu. Integer non cursus orci.</p>
     </div>
 </body>
 </html>

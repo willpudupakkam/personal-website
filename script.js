@@ -24,6 +24,7 @@ const notesBtn = document.querySelector("#notes");
 const titlePage = document.querySelector("#title-page");
 const aboutPage = document.querySelector("#about-page");
 const projectsPage = document.querySelector("#projects-page");
+const notesPage = document.querySelector("#notes-page")
 
 homeBtn.addEventListener("click", () => {
     // homeBtn.style.color = "white";
@@ -76,6 +77,8 @@ notesBtn.addEventListener("click", () => {
     aboutSelected = false;
     projectsSelected = false;
     notesSelected = true;
+
+    notesPage.scrollIntoView();
 
 });
 
@@ -183,6 +186,19 @@ function handleIntersection(entries, observer) {
                 aboutSelected = false;
                 projectsSelected = true;
                 notesSelected = false;
+                break;
+            case "notes-page":
+                notesBtn.style.color = "white";
+                notesBtn.style.borderColor = olColor;
+            
+                aboutBtn.style.borderColor = bgColor;
+                projectsBtn.style.borderColor = bgColor;
+                homeBtn.style.borderColor = bgColor;
+
+                aboutSelected = false;
+                projectsSelected = false;
+                notesSelected = true;
+
         };
       };
     });
@@ -198,3 +214,17 @@ const observer = new IntersectionObserver(handleIntersection, observerOptions);
 observer.observe(titlePage);
 observer.observe(aboutPage);
 observer.observe(projectsPage);
+observer.observe(notesPage);
+
+// window.addEventListener('scroll', function() {
+//     var element = document.querySelector('#about-buttons');
+//     var rect = element.getBoundingClientRect();
+    
+//     if (rect.top <= window.innerHeight / 4 && rect.bottom >= window.innerHeight / 4) {
+//       element.style.position = 'sticky';
+//       element.style.top = '50vh';
+//     } else {
+//       element.style.position = 'sticky';
+//     }
+//   });
+  
