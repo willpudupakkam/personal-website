@@ -20,7 +20,7 @@ function App() {
       id: 2, 
       title: 'Stern-Gerlach Simulation', 
       desc: 'A Jupyter Notebook simulation exploring the foundational Stern-Gerlach quantum mechanics experiment.',
-      link: 'https://github.com/willpudupakkam/python-playground/blob/main/stern-gerlach.ipynb',
+      link: 'https://github.com/willpudupakkam/python-playground/blob/main/Physics/stern-gerlach.ipynb',
       linkLabel: 'View Notebook',
       image: sgImage
     },
